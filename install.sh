@@ -1,6 +1,6 @@
-ln -sf .zshrc ~/.zshrc
-mkdir -p ~/.config
-cd ~/.config
-ln -sf htop ~/.config/htop
-ln -sf neofetch ~/.config/neofetch
-ln -sf alacritty ~/.config/alacritty
+#!/bin/bash
+ln -sf .zshrc $HOME/.zshrc
+mkdir -p $HOME/.config
+ln -sf htop $HOME/.config/htop
+ln -sf neofetch $HOME/.config/neofetch
+ln -sf alacritty $HOME/.config/alacritty
