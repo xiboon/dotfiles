@@ -1,6 +1,6 @@
-mv .zshrc ~/.zshrc
+ln -sf .zshrc ~/.zshrc
 mkdir -p ~/.config
 cd .config
-mv htop ~/.config/
-mv neofetch ~/.config/
-mv alacritty ~/.config/
+ln -sf htop ~/.config/htop
+ln -sf neofetch ~/.config/neofetch
+ln -sf alacritty ~/.config/alacritty
