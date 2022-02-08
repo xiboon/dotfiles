@@ -1,8 +1,10 @@
-ZSH=/usr/share/oh-my-zsh/
+ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="amuse"
 plugins=(git node)
-unalias ls l
+alias ls=''
+alias l=''
+unalias ls l>/dev/null
 alias ls="exa --icons"
 alias l="exa -lah --icons"
 alias ndev="npm run dev"
@@ -23,7 +25,7 @@ alias rmr="trash-restore"
 # ohmyzsh stuff
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
-  mkdir $ZSH_CACHE_DIR
+    mkdir $ZSH_CACHE_DIR
 fi
 
 source $ZSH/oh-my-zsh.sh
