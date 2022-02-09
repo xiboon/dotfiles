@@ -1,10 +1,10 @@
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="amuse"
+ZSH_THEME="robbyrussell"
 plugins=(git node)
 alias ls=''
 alias l=''
-unalias ls l>/dev/null
+unalias ls l
 alias ls="exa --icons"
 alias l="exa -lah --icons"
 alias ndev="npm run dev"
@@ -18,7 +18,7 @@ alias rm="trash-put"
 alias rme="trash-empty"
 alias rml="trash-list"
 alias rmr="trash-restore"
-
+alias vps="ssh root@fluorine"
 
 
 
