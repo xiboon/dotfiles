@@ -8,3 +8,4 @@ mkdir -p $HOME/.config/neofetch
 ln -sf "$path"/.config/neofetch "$HOME"/.config/neofetch
 mkdir -p $HOME/.config/alacritty
 ln -sf "$path"/.config/alacritty/alacritty.conf "$HOME"/.config/alacritty/alacritty.conf
+ln -sf "$path"/.config/

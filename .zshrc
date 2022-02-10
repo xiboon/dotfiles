@@ -1,7 +1,3 @@
-ZSH=$HOME/.oh-my-zsh
-
-ZSH_THEME="robbyrussell"
-plugins=(git node)
 alias ls=''
 alias l=''
 unalias ls l
@@ -20,12 +16,4 @@ alias rml="trash-list"
 alias rmr="trash-restore"
 alias vps="ssh root@fluorine"
 
-
-
-# ohmyzsh stuff
-ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
-if [[ ! -d $ZSH_CACHE_DIR ]]; then
-    mkdir $ZSH_CACHE_DIR
-fi
-
-source $ZSH/oh-my-zsh.sh
+eval "$(starship init zsh)"
